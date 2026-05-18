@@ -1,0 +1,2 @@
+print('--- SEJA BEM VINDO AO SIMULADOR DE DECIOSÕES ')
+
