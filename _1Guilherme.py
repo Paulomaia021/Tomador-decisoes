@@ -39,6 +39,7 @@ def decisao1():
            
             print('\n[ERRO] Opção inválida! Digite apenas 1 ou 2.')
             input('Aperte ENTER para tentar novamente...') 
+            print('Seja bem vindo')
 jogador = Iniciar()
 Comeco(jogador)
 decisao1()
