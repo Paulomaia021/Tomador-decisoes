@@ -6,24 +6,39 @@ def Iniciar():
     nome = input('Defina o nome do seu jogador: ')
     
     print(f'Seja muito bem-vindo {nome}. Você está começando sua carreira agora e vai precisar tomar decisões para ter sucesso.')
-    input("Aperte ENTER para continuar...")
+    input("Aperte ENTER para continuar...\n")
     return nome
 
 def Comeco(nome):
-    print(f'Olá {nome}. Você é um jogador da base do flamengo e esta prestes a começar a sua carreira\n mas antes voce precisa saber dos seus atributos como jopgador.\n 1- Habilidade =50\n 2- Dinheiro = 1000\n 3- Energia = 100\n 4- Fama = 0\n 5- idade =  17 ')
+    print(f'Olá {nome}. Você é um jogador da base de Engenheiro coelho e esta prestes a começar a sua carreira\n mas antes voce precisa saber dos seus atributos como jopgador.\n 1- Habilidade =50\n 2- Energia = 100\n 3- Fama = 0 ')
 
 def decisao1():
-
-    print('Você recebeu 3 propostas diferentes pra jogar no futebol profissional\n' 
-      'Porém é em 3 estados diferentes. ')
-    print('Escolha aonde quer ir:\n'
-          '1- Bahia\n'
-          '2- Rio de Janeiro\n'
-          '3- São Paulo\n')
-    estado = input('Informe o número do estado: ')
-    if estado == 1:
-        print('Meus parabens por decidido ir para o Bahia,\n agora você tem mais uma supresa escolher entre 3 times pra atuar.')      
-
+    input("Aperte ENTER para continuar...\n")
+    
+    print('Hoje é mais um dia normal de jogo contra Arthur nogueira, porém o tecnico te deu a opção de não jogar pra ficar treinando hoje se quiser')
+     
+    while True:
+        print('\nO que você quer fazer?:\n'
+              '1 - Jogar\n'
+              '2 - Não jogar, para ir treinar')
+        
+        jogou = input('Escolha um número: ')
+        
+        if jogou == '1':
+            print('\nMeus parabéns, o seu time ganhou o jogo e a equipe técnica disse que um olheiro de time grande gostou de você!')
+            print('Você ganhou +50 fama e perdeu -25 de energia.')
+            break  
+            
+        elif jogou == '2':
+            print('\nVocê perdeu uma grande oportunidade...') 
+            input('Aperte ENTER para continuar...') 
+            print('Você perdeu a chance de ir para a copa. O jogo acabou.')
+            break
+            
+        else:
+           
+            print('\n[ERRO] Opção inválida! Digite apenas 1 ou 2.')
+            input('Aperte ENTER para tentar novamente...') 
 jogador = Iniciar()
 Comeco(jogador)
 decisao1()
