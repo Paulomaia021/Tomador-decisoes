@@ -17,7 +17,7 @@ def decisao1():
 
     
     print('Hoje é mais um dia normal de jogo contra Arthur nogueira, porém o tecnico te deu a opção de não jogar pra ficar treinando hoje se quiser')
-    print('bem vindo baitola')
+  
     while True:
         print('\nO que você quer fazer?:\n'
               '1 - Jogar\n'
