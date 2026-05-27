@@ -1,4 +1,4 @@
-print('--- SEJA BEM VINDO AO SIMULADOR DE DECISÕES ---')
+print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA ---')
 
 input("Aperte ENTER para continuar...")
 
@@ -7,6 +7,7 @@ def Iniciar():
     
     print(f'Seja muito bem-vindo {nome}. Você está começando sua carreira agora e vai precisar tomar decisões para ter sucesso.')
     input("Aperte ENTER para continuar...\n")
+    print('')
     return nome
 
 def Comeco(nome):
