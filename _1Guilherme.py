@@ -1,3 +1,6 @@
+# Responsável: Guilherme
+# Funções de exibição (decisões)
+
 #Essa função e usada para pegar o nome que o usuário inserir
 def Iniciar():
     while True:

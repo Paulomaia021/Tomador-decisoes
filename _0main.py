@@ -1,5 +1,6 @@
 # Simulador: [Simulador de carreira]
 # Grupo: Paulo Cézar, Kaue Souza, Guilherme Fonseca
+from _3kaue import mostrar_status, mostrar_menu, mostrar_resultado
 from _1Guilherme import Iniciar, decisao1, chegada
 
 # 1. Mensagem de Boas-Vindas inicial do jogo
@@ -28,4 +29,3 @@ chegada(atributos)
 
 # 4. Mostra o placar de atributos finalizado do dia
 print(f'\nAtributos atuais do jogador: {atributos}')
-print('oi')
