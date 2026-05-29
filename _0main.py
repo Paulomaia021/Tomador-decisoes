@@ -2,6 +2,7 @@
 # Grupo: Paulo Cézar, Kaue Souza, Guilherme Fonseca
 from _1Guilherme import Iniciar, decisao1
 from _2Paulo import escolha_de_time,  chegada
+from _3Kaue import mostrar_status, mostrar_menu, mostrar_resultado
 # 1. Mensagem de Boas-Vindas inicial do jogo
 print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA  ---')
 print('Você tem exatamente 10 dias pra construir o seu jogador com objetivo de ir pra copa do mundo')
