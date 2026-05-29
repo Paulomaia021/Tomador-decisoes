@@ -28,3 +28,4 @@ chegada(atributos)
 
 # 4. Mostra o placar de atributos finalizado do dia
 print(f'\nAtributos atuais do jogador: {atributos}')
+print('oi')
