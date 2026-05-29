@@ -38,12 +38,3 @@ def decisao1():
             print('\n[ERRO] Opção inválida! Digite apenas 1 ou 2.')
             input('Aperte ENTER para tentar novamente...') 
 
-def chegada(atributos):
-    input('Aperte ENTER para tentar novamente...') 
-    
-    print('Você chegou no palmeiras e ja foi convocado para jogar um jogo')
-    print('Você ganhou mais 15+ habilidade, 30+ fama, 20- energia')
-    atributos["habilidade"] += 15
-    atributos["fama"] += 30
-    atributos["energia"] -= 20
-    input("\nAperte ENTER para continuar...") 
