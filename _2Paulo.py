@@ -1,7 +1,5 @@
 # Responsável: Paulo
 # Funções de ?
-
-
 def escolha_de_time():
     print('Você recebeu uma proposta de ir para o Palmeiras, você aceita? \n 1 - Aceito\n 2- Não aceito' )
     while True:
@@ -17,7 +15,7 @@ def escolha_de_time():
             print('[ERRO] insira somente os números 1 ou 2')
 
 def chegada(atributos):
-    input('Aperte ENTER para tentar novamente...') 
+    input('Aperte ENTER para continuar...') 
     
     print('Você chegou no palmeiras e ja foi convocado para jogar um jogo')
     print('Você ganhou mais 15+ habilidade, 30+ fama, 20- energia')

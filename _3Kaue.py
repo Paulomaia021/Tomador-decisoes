@@ -10,7 +10,7 @@ def mostrar_status(atributos):
     print(f"Habilidade: {atributos['habilidade']}")
     print(f"Energia: {atributos['energia']}")
     print(f"Fama: {atributos['fama']}")
-    print(f"Dia: {atributos['dia']}")
+    print(f"Dia: {atributos['mes']}")
     print(f"Reputação: {atributos['reputacao']}")
     print("=============================")
 

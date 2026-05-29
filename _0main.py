@@ -6,7 +6,7 @@ from _2Paulo import escolha_de_time, chegada
 
 # 1. Mensagem inicial
 print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA ---')
-print('Você tem exatamente 10 dias pra construir o seu jogador com objetivo de ir pra copa do mundo')
+print('Você tem exatamente 10 meses pra construir o seu jogador com objetivo de ir pra copa do mundo')
 input("\nAperte ENTER para continuar...\n")
 
 # 2. Estado do jogo
@@ -14,7 +14,7 @@ atributos = {
     'habilidade': 50,
     'energia': 100,
     'fama': 0,
-    'dia': 1,
+    'mes': 1,
     'reputacao': 50
 }
 
@@ -22,25 +22,25 @@ atributos = {
 historico = []
 
 # 3. Início do jogo
-Iniciar()
+nome = Iniciar()
 
 # 4. Primeira decisão
-decisao1(atributos)  # AGORA PASSA ATRIBUTOS
+decisao1(nome, atributos, historico)  # AGORA PASSA ATRIBUTOS
 historico.append("Dia 1: Jogou partida contra Arthur Nogueira")
 
-atributos['dia'] += 1
+atributos['mes'] += 1
 
 # 5. Escolha de time
 escolha_de_time()
 historico.append("Dia 2: Escolheu um time")
 
-atributos['dia'] += 1
+atributos['mes'] += 1
 
 # 6. Chegada no time
 chegada(atributos)
 historico.append("Dia 3: Chegou ao novo clube")
 
-atributos['dia'] += 1
+atributos['mes'] += 1
 
 # 7. Mostrar atributos finais
 print(f'\nAtributos atuais do jogador: {atributos}')
