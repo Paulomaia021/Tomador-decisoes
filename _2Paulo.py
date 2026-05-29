@@ -1,3 +1,7 @@
+# Responsável: Paulo
+# Funções de ?
+
+
 def escolha_de_time():
     print('Você recebeu uma proposta de ir para o Palmeiras, você aceita? \n 1 - Aceito\n 2- Não aceito' )
     while True:

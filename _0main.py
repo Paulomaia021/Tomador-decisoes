@@ -1,14 +1,15 @@
-# Simulador: [Simulador de carreira]
+# Simulador: Simulador de carreira
 # Grupo: Paulo Cézar, Kaue Souza, Guilherme Fonseca
+
 from _1Guilherme import Iniciar, decisao1
-from _2Paulo import escolha_de_time,  chegada
-from _3Kaue import mostrar_status, mostrar_menu, mostrar_resultado
-# 1. Mensagem de Boas-Vindas inicial do jogo
-print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA  ---')
+from _2Paulo import escolha_de_time, chegada
+
+# 1. Mensagem inicial
+print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA ---')
 print('Você tem exatamente 10 dias pra construir o seu jogador com objetivo de ir pra copa do mundo')
 input("\nAperte ENTER para continuar...\n")
 
-# 2. Dicionário de atributos inicializado
+# 2. Estado do jogo
 atributos = {
     'habilidade': 50,
     'energia': 100,
@@ -17,18 +18,34 @@ atributos = {
     'reputacao': 50
 }
 
-# 3. Execução da história do jogo na ordem correta
-# Pede o nome do jogador
-Iniciar() 
+# LISTA DE HISTÓRICO
+historico = []
 
-# Realiza a primeira grande decisão (Jogo contra Arthur Nogueira)
-decisao1() 
+# 3. Início do jogo
+Iniciar()
 
-# ele escolhe qual time ele vai 
+# 4. Primeira decisão
+decisao1(atributos)  # AGORA PASSA ATRIBUTOS
+historico.append("Dia 1: Jogou partida contra Arthur Nogueira")
+
+atributos['dia'] += 1
+
+# 5. Escolha de time
 escolha_de_time()
+historico.append("Dia 2: Escolheu um time")
 
-# Mostra a transferência para o Palmeiras e atualiza os atributos passados por parâmetro
-chegada(atributos) 
+atributos['dia'] += 1
 
-# 4. Mostra o placar de atributos finalizado do dia
+# 6. Chegada no time
+chegada(atributos)
+historico.append("Dia 3: Chegou ao novo clube")
+
+atributos['dia'] += 1
+
+# 7. Mostrar atributos finais
 print(f'\nAtributos atuais do jogador: {atributos}')
+
+# 8. MOSTRAR HISTÓRICO
+print("\n===== HISTÓRICO DE DECISÕES =====")
+for acao in historico:
+    print("-", acao)
