@@ -1,8 +1,7 @@
 # Simulador: [Simulador de carreira]
 # Grupo: Paulo Cézar, Kaue Souza, Guilherme Fonseca
-from _3kaue import mostrar_status, mostrar_menu, mostrar_resultado
-from _1Guilherme import Iniciar, decisao1, chegada
-
+from _1Guilherme import Iniciar, decisao1
+from _2Paulo import escolha_de_time,  chegada
 # 1. Mensagem de Boas-Vindas inicial do jogo
 print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA  ---')
 print('Você tem exatamente 10 dias pra construir o seu jogador com objetivo de ir pra copa do mundo')
@@ -23,6 +22,9 @@ Iniciar()
 
 # Realiza a primeira grande decisão (Jogo contra Arthur Nogueira)
 decisao1() 
+
+# ele escolhe qual time ele vai 
+escolha_de_time()
 
 # Mostra a transferência para o Palmeiras e atualiza os atributos passados por parâmetro
 chegada(atributos) 
