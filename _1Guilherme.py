@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA ---')
-
-input("Aperte ENTER para continuar...")
-
-def Iniciar():
-    nome = input('Defina o nome do seu jogador: ')
-    
-    print(f'Seja muito bem-vindo {nome}. Você está começando sua carreira agora e vai precisar tomar decisões para ter sucesso.')
-    input("Aperte ENTER para continuar...\n")
-    print('')
-    return nome
-=======
 #Essa função e usada para pegar o nome que o usuário inserir
 def Iniciar():
     while True:
@@ -22,7 +9,6 @@ def Iniciar():
             print('[ERRO] O nome deve conter apenas letras! Tente novamente.')
         else:
             break
->>>>>>> 009e2b51d9bcaddf30c1f569195f8c3349669085
 
     print(f'Seja muito bem-vindo {nome}. Você está começando sua carreira agora e vai precisar tomar decisões para ter sucesso.')
 
