@@ -20,7 +20,7 @@ def Iniciar():
 
         else:
             print(f'Seja muito bem-vindo {nome}.')
-        break
+            break
     return nome
          
 
