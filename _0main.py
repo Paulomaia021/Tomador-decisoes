@@ -2,7 +2,7 @@
 # Grupo: Paulo Cézar, Kaue Souza, Guilherme Fonseca
 
 from _1Guilherme import Iniciar, decisao1
-from _2Paulo import escolha_de_time, chegada
+from _2Paulo import escolha_de_time, chegada, dia_2
 from _3Kaue import mostrar_menu, mostrar_resultado, mostrar_status
 # 1. Mensagem inicial
 print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA ---')
@@ -43,13 +43,15 @@ historico.append("Dia 3: Chegou ao novo clube")
 
 atributos['mes'] += 1
 
-mostrar_status()
-input('Aperte ENTER para prosseguir...')
-mostrar_resultado()
-input('Aperte ENTER para prosseguir...')
+dia_2()
 
-mostrar_menu()
-input('Aperte ENTER para prosseguir...')
+# mostrar_status()
+# input('Aperte ENTER para prosseguir...')
+# mostrar_resultado()
+# input('Aperte ENTER para prosseguir...')
+
+# mostrar_menu()
+# input('Aperte ENTER para prosseguir...')
 
 
 # 7. Mostrar atributos finais

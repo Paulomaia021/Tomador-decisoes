@@ -47,4 +47,32 @@ def chegada(atributos):
         else:
             print('Informe somente o número 1 ou 2')
             input('Aperte ENTER para tentar novamente...')
+    return jogar_ou_nao
 
+def dia_2(jogar_ou_nao, atributos):
+    print('Mês 2')
+    atributos['mes'] +=1
+    input('Aperte ENTER pra continuar...')
+    if jogar_ou_nao == 2:
+     print('Vai Haver uma final do Paulistão contra o Corinthians')
+     print('Você não se sente corajoso p esse jogo e pensa em pedir p n jogar ')
+     print('Oq vc vai fazer?')
+     while True:
+         print('1 -Jogar\n'
+               '2 - Não jogar')
+         medroso = input('Vai jogar ou não? ')
+         if medroso == '1':
+            break
+         elif medroso == '2':
+             print('O treinador recusou seu pedido, vc vai jogar')  
+             break
+         else:
+            print('Informe somente 1 ou 2')
+            input('Aperte ENTER para continuar...')
+
+     print('Você entra no jogo aos 80 minutos e faz o gol do titulo')
+     atributos['habilidade'] += 5
+     atributos['fama'] =+ 2
+     atributos['energia'] -= 10
+     
+         
