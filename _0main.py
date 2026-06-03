@@ -3,8 +3,10 @@
 
 from _1Guilherme import Iniciar, decisao1
 from _2Paulo import escolha_de_time, chegada, dia_2
+from colorama import Fore, init
 from _3Kaue import mostrar_menu, mostrar_resultado, mostrar_status
 # 1. Mensagem inicial
+init()
 print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA ---')
 print('Você tem exatamente 10 meses pra construir o seu jogador com objetivo de ir pra copa do mundo')
 input("\nAperte ENTER para continuar...\n")
@@ -16,7 +18,14 @@ atributos = {
     'fama': 0,
     'mes': 1,
     'reputacao': 50
-    
+
+}
+
+color = {
+    'yellow': Fore.YELLOW,
+    'blue': Fore.BLUE,
+    'green': Fore.GREEN,
+    'reset': Fore.RESET,
 }
 
 # LISTA DE HISTÓRICO

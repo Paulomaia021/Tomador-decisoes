@@ -1,12 +1,10 @@
 # Responsável: Kauê
 # Funções de exibição (interface)
-
-# from colorama import Fore, initi, Style 
-# init[autoreset]=True
-# print(Back.Yellow+ "Funções de exibição carregadas com sucesso!" + Style.RESET_ALL)
+from colorama import Fore, initi, Style 
+init()
 
 def mostrar_status(atributos):
-    print("\n===== STATUS DO JOGADOR =====")
+    print(f"{cores[green]}n===== STATUS DO JOGADOR =====")
     print(f"Habilidade: {atributos['habilidade']}")
     print(f"Energia: {atributos['energia']}")
     print(f"Fama: {atributos['fama']}")
