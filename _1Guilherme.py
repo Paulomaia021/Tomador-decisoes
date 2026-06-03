@@ -1,8 +1,8 @@
 # Responsável: Guilherme
 # Funções de exibição (decisões)
 
-#Essa função e usada para pegar o nome que o usuário inserir
 def Iniciar():
+    """Função para definir o nome do jogador"""
     while True:
         nome = input('Defina o nome do seu jogador: ').strip().title()
 
@@ -26,7 +26,7 @@ def Iniciar():
 
 
 def decisao1(nome, atributos, historico):
-
+    """Primeira decisão do jogo: jogar ou treinar"""
     input("Aperte ENTER para continuar...\n")
     
     print(f'{nome} você é um jogador do time de engenheiro coelho e tem os seus atributos que serão muito importantes\n para conseguir ir para a copa ')
@@ -40,7 +40,7 @@ def decisao1(nome, atributos, historico):
     input("Aperte ENTER para continuar...\n")
 
     print('Hoje é mais um dia normal de jogo contra Arthur nogueira, porém o tecnico te deu a opção de não jogar pra ficar\n treinando hoje se quiser')
-     
+      
     while True:
         print('\nO que você quer fazer?:\n'
               '1 - Jogar\n'
@@ -54,6 +54,7 @@ def decisao1(nome, atributos, historico):
             print('Você ganhou +50 fama e perdeu -25 de energia.')
             atributos["fama"] += 50
             atributos["energia"] -= 25
+            historico.adicionar("Jogou contra Arthur Nogueira - Ganhou +50 fama, -25 energia")
             input("Aperte ENTER para continuar...\n")
 
             break  
@@ -62,19 +63,15 @@ def decisao1(nome, atributos, historico):
             print('\nVocê perdeu uma grande oportunidade...') 
             input('Aperte ENTER para continuar...') 
             print('Você perdeu a chance de ir para a copa. O jogo acabou.')
+            historico.adicionar("Decidiu treinar ao invés de jogar - Perdeu a oportunidade")
             exit()
             break
 
         elif jogou == '3':
-          print("\n===== HISTÓRICO DE DECISÕES =====\n")
-          if not historico:
-              print('Nenhuma decisão foi registrada ainda.')
-          else:
-            for acao in historico:
-             print("-", acao)
+            historico.exibir()
       
         else:
-            print('\n[ERRO] Opção inválida! Digite apenas 1 ou 2.')
+            print('\n[ERRO] Opção inválida! Digite apenas 1, 2 ou 3.')
             input('Aperte ENTER para tentar novamente...') 
 
     return atributos, nome

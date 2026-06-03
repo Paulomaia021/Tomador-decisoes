@@ -1,21 +1,22 @@
 # Responsável: Kauê
 # Funções de exibição (interface)
+from colorama import Fore, init, Style 
 
-# from colorama import Fore, initi, Style 
-# init[autoreset]=True
-# print(Back.Yellow+ "Funções de exibição carregadas com sucesso!" + Style.RESET_ALL)
+init()
 
 def mostrar_status(atributos):
-    print("\n===== STATUS DO JOGADOR =====")
+    """Função para exibir o status atual do jogador"""
+    print(f"{Fore.GREEN}===== STATUS DO JOGADOR =====")
     print(f"Habilidade: {atributos['habilidade']}")
     print(f"Energia: {atributos['energia']}")
     print(f"Fama: {atributos['fama']}")
     print(f"Dia: {atributos['mes']}")
     print(f"Reputação: {atributos['reputacao']}")
-    print("=============================")
+    print(f"============================={Fore.RESET}")
 
 
 def mostrar_menu():
+    """Função para exibir menu de opções"""
     print("\n===== O QUE VOCÊ QUER FAZER? =====")
     print("1 - Jogar partida")
     print("2 - Treinar")
@@ -24,6 +25,7 @@ def mostrar_menu():
 
 
 def mostrar_resultado(texto):
+    """Função para exibir resultado de uma ação"""
     print("\n===== RESULTADO =====")
     print(texto)
     print("=====================")
