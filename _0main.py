@@ -16,6 +16,7 @@ atributos = {
     'fama': 0,
     'mes': 1,
     'reputacao': 50
+    
 }
 
 # LISTA DE HISTÓRICO

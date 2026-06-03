@@ -29,11 +29,11 @@ def escolha_de_time():
 def chegada(atributos):
     input('Aperte ENTER para continuar...') 
     while True:
-        print('Você chegou no palmeiras e vai haver um jogo, mas\n como vc chegou a agora tem a opção de descansar, oq vc quer fazer?')
-        print('1 - jogar\n ' \
-        '      2 - Descansar')
+        print('Você chegou no palmeiras e vai haver um jogo, mas\ncomo vc chegou a agora tem a opção de descansar, oq vc quer fazer?')
+        print('1 - Jogar\n'\
+              '2 - Descansar')
         jogar_ou_nao = input('Informe o numero:')
-
+        print('')
         if jogar_ou_nao == '1':        
             print('Você ganhou mais 15+ habilidade, 30+ fama, 20- energia')
             atributos["habilidade"] += 15
