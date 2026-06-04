@@ -6,24 +6,25 @@ def escolha_de_time():
         proposta = int(input('Informe o numero: '))
 
         if proposta == 1:
-            print('Meus parabéns, seja muito bem vindo ao Palmeiras ')
-            break
+                  print('Meus parabéns, seja muito bem vindo ao Palmeiras ')
+                  break
         elif proposta == 2:
-            print('Você tem certeza? Você sabe que no Palmeiras é um time grande.. estamos em época de copa, vc n qr ir?')
-            print('Vou perguntar mais uma vez. Você aceita vir pro Palmeiras?')
-
-            print('1 - aceito\n '' 2 - Não aceito')
-            decisao2 = input('Informe o número: ')
-            if decisao2 == '1':
-             print('Meus parabéns, Você tomou a decisão certa ')
-            elif decisao2 == '2':
-                print('Tudo bem, ficamos triste mas entendemos o seu lado...')
-                print('--- MENSAGEM DO SISTEMA---')
-                print('Você perdeu')
-                exit()
+                 print('Você tem certeza? Você sabe que no Palmeiras é um time grande.. estamos em época de copa, vc n qr ir?')
+                 print('Vou perguntar mais uma vez. Você aceita vir pro Palmeiras?')
+                 print('1 - aceito\n '' 2 - Não aceito')
+                 decisao2 = input('Informe o número: ')
+                 
+        if decisao2 == '1':
+                    print('Meus parabéns, Você tomou a decisão certa ') 
+                    break
+        elif decisao2 == '2':
+                    print('Tudo bem, ficamos triste mas entendemos o seu lado...')
+                    print('--- MENSAGEM DO SISTEMA---')
+                    print('Você perdeu')
+                    exit()
         else:
-            print('[ERRO] insira somente os números 1 ou 2')
-            input('Aperte ENTER para tentar novamente...')
+                    print('[ERRO] insira somente os números 1 ou 2')
+                    input('Aperte ENTER para tentar novamente...')
 
 
 def chegada(atributos):

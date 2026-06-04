@@ -1,7 +1,6 @@
 # Responsável: Kauê
 # Funções de exibição (interface)
-from colorama import Fore, initi, Style 
-init()
+# from colorama import Fore, initi, Style  init()
 
 def mostrar_status(atributos):
     print(f"{cores[green]}n===== STATUS DO JOGADOR =====")
