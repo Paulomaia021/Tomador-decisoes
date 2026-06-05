@@ -12,17 +12,17 @@ def escolha_de_time():
                  print('Você tem certeza? Você sabe que no Palmeiras é um time grande.. estamos em época de copa, vc n qr ir?')
                  print('Vou perguntar mais uma vez. Você aceita vir pro Palmeiras?')
                  print('1 - aceito\n '' 2 - Não aceito')
-                 decisao2 = input('Informe o número: ')
-                 
-        if decisao2 == '1':
+                 decisao2 = int(input('Informe o número: '))
+                 if decisao2 == 1:
                     print('Meus parabéns, Você tomou a decisão certa ') 
                     break
-        elif decisao2 == '2':
+                 elif decisao2 == 2:
                     print('Tudo bem, ficamos triste mas entendemos o seu lado...')
                     print('--- MENSAGEM DO SISTEMA---')
                     print('Você perdeu')
                     exit()
-        else:
+                    break
+                 else:
                     print('[ERRO] insira somente os números 1 ou 2')
                     input('Aperte ENTER para tentar novamente...')
 
@@ -54,7 +54,7 @@ def dia_2(jogar_ou_nao, atributos):
     print('Mês 2')
     atributos['mes'] +=1
     input('Aperte ENTER pra continuar...')
-    if jogar_ou_nao == 2:
+    if jogar_ou_nao == '2':
      print('Vai Haver uma final do Paulistão contra o Corinthians')
      print('Você não se sente corajoso p esse jogo e pensa em pedir p n jogar ')
      print('Oq vc vai fazer?')
@@ -63,6 +63,10 @@ def dia_2(jogar_ou_nao, atributos):
                '2 - Não jogar')
          medroso = input('Vai jogar ou não? ')
          if medroso == '1':
+            print('Você entra no jogo aos 80 minutos e faz o gol do titulo')
+            atributos['habilidade'] += 5
+            atributos['fama'] =+ 2
+            atributos['energia'] -= 10
             break
          elif medroso == '2':
              print('O treinador recusou seu pedido, vc vai jogar')  
@@ -76,4 +80,6 @@ def dia_2(jogar_ou_nao, atributos):
      atributos['fama'] =+ 2
      atributos['energia'] -= 10
      
+
+
          
