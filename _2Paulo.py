@@ -3,20 +3,20 @@
 def escolha_de_time():
     print('Você recebeu uma proposta de ir para o Palmeiras, você aceita? \n 1 - Aceito\n 2- Não aceito' )
     while True:
-        proposta = int(input('Informe o numero: '))
+        proposta = input('Informe o numero: ')
 
-        if proposta == 1:
+        if proposta == '1':
                   print('Meus parabéns, seja muito bem vindo ao Palmeiras ')
                   break
-        elif proposta == 2:
+        elif proposta == '2':
                  print('Você tem certeza? Você sabe que no Palmeiras é um time grande.. estamos em época de copa, vc n qr ir?')
                  print('Vou perguntar mais uma vez. Você aceita vir pro Palmeiras?')
                  print('1 - aceito\n '' 2 - Não aceito')
-                 decisao2 = int(input('Informe o número: '))
-                 if decisao2 == 1:
+                 decisao2 = input('Informe o número: ')
+                 if decisao2 == '1':
                     print('Meus parabéns, Você tomou a decisão certa ') 
                     break
-                 elif decisao2 == 2:
+                 elif decisao2 == '2':
                     print('Tudo bem, ficamos triste mas entendemos o seu lado...')
                     print('--- MENSAGEM DO SISTEMA---')
                     print('Você perdeu')
@@ -79,7 +79,33 @@ def dia_2(jogar_ou_nao, atributos):
      atributos['habilidade'] += 5
      atributos['fama'] =+ 2
      atributos['energia'] -= 10
-     
 
 
-         
+def dia_3(atributos):
+    print('Mês 3')
+    atributos['mes'] +=1
+
+    print('É mais um mês normal, você esta treinando, focado em ser o melhor e se destacar')
+    print('Oq vc quer fazer hj?\n'
+          '1 - Treinar'
+          '2 - Descansar'
+          '3 - Exibir o histórico')
+    a = input('Informe o número: ')
+    while True:
+        if a == '1':
+            print('Você ganhou +5 Habilidade +0 de fama -5 Energia ')
+            atributos['habilidade'] += 5
+            atributos['energia'] -= 5
+            
+        elif a == '2':
+            print('Você ganhou + 20 de energia')
+            atributos['energia'] +=20
+        else:
+            print('Informe um número entre 1, 2 e 3')
+            input('Aperte ENTER para continuar...')
+
+def dia_4(atributos):
+    print('Mês 4')
+    atributos['mes'] += 1
+
+    

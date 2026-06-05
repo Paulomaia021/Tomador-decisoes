@@ -2,7 +2,7 @@
 # Grupo: Paulo Cézar, Kaue Souza, Guilherme Fonseca
 
 from _1Guilherme import Iniciar, decisao1
-from _2Paulo import escolha_de_time, chegada, dia_2
+from _2Paulo import escolha_de_time, chegada, dia_2, dia_3
 # from colorama import Fore, init
 from _3Kaue import mostrar_menu, mostrar_resultado, mostrar_status
 # 1. Mensagem inicial
@@ -56,7 +56,7 @@ atributos['mes'] += 1
 
 dia_2(jogar_ou_nao, atributos)
 
-
+dia_3(atributos)
 # mostrar_status()
 # input('Aperte ENTER para prosseguir...')
 # mostrar_resultado()
@@ -73,3 +73,4 @@ dia_2(jogar_ou_nao, atributos)
 print("\n===== HISTÓRICO DE DECISÕES =====")
 for acao in historico:
     print("-", acao)
+
