@@ -72,7 +72,7 @@ def decisao1(nome, atributos, historico):
           else:
             for acao in historico:
              print("-", acao)
-      
+
         else:
             print('\n[ERRO] Opção inválida! Digite apenas 1 ou 2.')
             input('Aperte ENTER para tentar novamente...') 

@@ -1,12 +1,10 @@
 # Simulador: Simulador de carreira
 # Grupo: Paulo Cézar, Kaue Souza, Guilherme Fonseca
-
 from _1Guilherme import Iniciar, decisao1
-from _2Paulo import escolha_de_time, chegada, dia_2, dia_3
-# from colorama import Fore, init
-from _3Kaue import mostrar_menu, mostrar_resultado, mostrar_status
+from _2Paulo import escolha_de_time, chegada, mes_2, mes_3
+from _3Kaue import mostrar_menu, mostrar_resultado, mostrar_status, mostrar_historico
+
 # 1. Mensagem inicial
-# init()
 print('--- SEJA BEM VINDO AO SIMULADOR DE CARREIRA ---')
 print('Você tem exatamente 10 meses pra construir o seu jogador com objetivo de ir pra copa do mundo')
 input("\nAperte ENTER para continuar...\n")
@@ -18,15 +16,7 @@ atributos = {
     'fama': 0,
     'mes': 1,
     'reputacao': 50
-
 }
-
-# color = {
-#     'yellow': Fore.YELLOW,
-#     'blue': Fore.BLUE,
-#     'green': Fore.GREEN,
-#     'reset': Fore.RESET,
-# }
 
 # LISTA DE HISTÓRICO
 historico = []
@@ -34,43 +24,53 @@ historico = []
 # 3. Início do jogo
 nome = Iniciar()
 
-# 4. Primeira decisão
-decisao1(nome, atributos, historico)  # AGORA PASSA ATRIBUTOS
+# 4. Primeira decisão (acontece antes do menu)
+decisao1(nome, atributos, historico)
 historico.append("Dia 1: Jogou partida contra Arthur Nogueira")
-
 atributos['mes'] += 1
 
-# 5. Escolha de time
+# 5. Escolha de time (acontece antes do menu)
 escolha_de_time()
 historico.append("Dia 2: Escolheu um time")
-
 atributos['mes'] += 1
 
-# 6. Chegada no time
-jogar_ou_nao = chegada(atributos)  
+# 6. Chegada no time (acontece antes do menu)
+jogar_ou_nao = chegada(atributos)
 historico.append("Dia 3: Chegou ao novo clube")
 atributos['mes'] += 1
-dia_2(jogar_ou_nao, atributos) 
 
-atributos['mes'] += 1
+# 7. LOOP PRINCIPAL DO MENU
+while atributos['mes'] <= 10:
+    mostrar_status(atributos)
+    mostrar_menu()
 
-dia_2(jogar_ou_nao, atributos)
+    opcao = input("\nEscolha uma opção: ")
 
-dia_3(atributos)
-# mostrar_status()
-# input('Aperte ENTER para prosseguir...')
-# mostrar_resultado()
-# input('Aperte ENTER para prosseguir...')
+    if opcao == '1':
+        mes_2(jogar_ou_nao, atributos)
+        historico.append(f"Mês {atributos['mes']}: Jogou partida")
+        atributos['mes'] += 1
 
-# mostrar_menu()
-# input('Aperte ENTER para prosseguir...')
+    elif opcao == '2':
+        print("\nVocê foi treinar!")
+        atributos['habilidade'] += 5
+        atributos['energia'] -= 10
+        historico.append(f"Mês {atributos['mes']}: Treinou")
+        atributos['mes'] += 1
 
+    elif opcao == '3':
+        print("\nVocê descansou!")
+        atributos['energia'] += 20
+        historico.append(f"Mês {atributos['mes']}: Descansou")
+        atributos['mes'] += 1
 
-# 7. Mostrar atributos finais
-# print(f'\nAtributos atuais do jogador: {atributos}')
+    elif opcao == '4':
+        mostrar_historico(historico)  
 
-# 8. MOSTRAR HISTÓRICO
-print("\n===== HISTÓRICO DE DECISÕES =====")
-for acao in historico:
-    print("-", acao)
+    else:
+        print("\n[ERRO] Opção inválida! Digite 1, 2, 3 ou 4.")
 
+# 8. Fim do jogo
+print("\n===== FIM DE CARREIRA =====")
+mostrar_status(atributos)
+mostrar_historico(historico)
