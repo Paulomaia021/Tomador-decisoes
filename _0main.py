@@ -63,7 +63,7 @@ def executar_jogo():
     
     kaue.pausar(historico)
     
-    # 4. Decisão final do Mês 10 e verificação dos atributos pelo Paulo
+    # 4. Decisão final do Mês 10 e verificação dos atributos no Paulo
     foi_convocado = paulo.mes_10(atributos, historico)
 
     # 5. Kauê assume a tela final baseada no resultado da convocação

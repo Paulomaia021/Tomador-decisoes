@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 # Responsável: Paulo
 # Funções de: Lógica do Jogo, Atualização de Atributos e Linha do Tempo
 import os
@@ -31,7 +30,7 @@ def escolha_de_time():
             print('Meus parabéns, seja muito bem vindo ao Palmeiras ')
             break
         elif proposta == '2':
-            print('Você tem certeza? Você sabe que no Palmeiras é um time grande.. estamos em época de copa, vc n qr ir?')
+            print('Você tem certeza? Você sabe que o Palmeiras é um time grande.. estamos em época de copa, você não quer ir?')
             print('Vou perguntar mais uma vez. Você aceita vir pro Palmeiras?')
             print('1 - aceito\n 2 - Não aceito')
             decisao2 = input('Informe o número: ').strip()
@@ -50,7 +49,7 @@ def escolha_de_time():
 def chegada(atributos):
     input('Aperte ENTER para continuar...') 
     while True:
-        print('Você chegou no palmeiras e vai haver um jogo, mas\ncomo vc chegou agora tem a opção de descansar, oque você quer fazer?')
+        print('Você chegou no palmeiras e vai haver um jogo, mas\ncomo você chegou agora tem a opção de descansar, oque você quer fazer?')
         print('1 - Jogar\n2 - Descansar')
         jogar_ou_nao = input('Informe o numero:').strip()
         print('')
@@ -84,7 +83,7 @@ def mes_2(jogar_ou_nao, atributos):
             print('1 -Jogar\n2 - Não jogar')
             medroso = input('Vai jogar ou não? ').strip()
             if medroso == '1':
-                print('Você entra no jogo aos 80 minutos e faz o gol do titulo')
+                print('Você entra no jogo aos 80 minutos e faz o gol do titulo!!!')
                 atributos['habilidade'] += 5
                 atributos['fama'] += 20
                 atributos['energia'] -= 10
