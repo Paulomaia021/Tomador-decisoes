@@ -32,7 +32,7 @@ def executar_jogo():
     atributos["fama"] += 50
     atributos["energia"] -= 25
     atributos["reputacao"] += 10
-    historico.append("Mês 1: Decidiu jogar contra Arthur Nogueira e chamou atenção do olheiro.")
+    historico.append("Mês 1: Decidiu jogar contra Arthur Nogueira e atraiu olheiro.")
 
     # Menu de pausa do Kauê para o jogador decidir quando avançar
     kaue.pausar(historico)

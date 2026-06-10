@@ -51,7 +51,7 @@ def exibir_atributos_e_historico(atributos, historico):
 def decisao_mes1_2(nome, atributos, historico):
     input("Aperte ENTER para continuar...\n")
     limpar_tela()
-    print(f'{nome} você é um jogador do time de Engenheiro Coelho e tem os seus atributos que serão muito importantes\n para alcançar seu objetivo')
+    print(f'{nome} você é um jogador do time de engenheiro coelho e tem os seus atributos que serão muito importantes\n para conseguir ir para a copa ')
     
     input("Aperte ENTER para conhecer seus atributos...\n")
     limpar_tela()
@@ -62,7 +62,7 @@ def decisao_mes1_2(nome, atributos, historico):
     
     input("Aperte ENTER para continuar...\n")
     limpar_tela()
-    print('Hoje você tem um jogo contra o time de Arthur Nogueira, porém, o tecnico te deu a opção de não jogar pra ficar\n treinando hoje')
+    print('Hoje é mais um dia normal de jogo contra Arthur nogueira, porém o tecnico te deu a opção de não jogar pra ficar\n treinando hoje se quiser')
      
     while True:
         print('\nO que você quer fazer?:')

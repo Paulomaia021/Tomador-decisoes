@@ -22,7 +22,7 @@ def verificar_limites_energia(atributos):
         atributos["energia"] = 0
 
 def escolha_de_time():
-    print('Você recebeu uma proposta de ir para o Palmeiras, você aceita? \n 1 - Aceito\n 2 - Não aceito' )
+    print('Você recebeu uma proposta de ir para o Palmeiras, você aceita? \n 1 - Aceito\n 2- Não aceito' )
     while True:
         proposta = input('Informe o numero: ').strip()
 
@@ -30,9 +30,9 @@ def escolha_de_time():
             print('Meus parabéns, seja muito bem vindo ao Palmeiras ')
             break
         elif proposta == '2':
-            print('Você tem certeza? Você sabe que o Palmeiras é um time grande... estamos em época de copa, você não quer ir?')
-            print('Vou perguntar mais uma vez. Você aceita a propoosta do Palmeiras?')
-            print('1 - Aceito\n 2 - Não aceito')
+            print('Você tem certeza? Você sabe que o Palmeiras é um time grande.. estamos em época de copa, você não quer ir?')
+            print('Vou perguntar mais uma vez. Você aceita vir pro Palmeiras?')
+            print('1 - aceito\n 2 - Não aceito')
             decisao2 = input('Informe o número: ').strip()
             if decisao2 == '1':
                 print('Meus parabéns, Você tomou a decisão certa ') 
@@ -49,7 +49,7 @@ def escolha_de_time():
 def chegada(atributos):
     input('Aperte ENTER para continuar...') 
     while True:
-        print('Você chegou no palmeiras e vai haver um jogo contra o Bragantino, mas\ncomo você chegou agora tem a opção de descansar, oque você quer fazer?')
+        print('Você chegou no palmeiras e vai haver um jogo, mas\ncomo você chegou agora tem a opção de descansar, oque você quer fazer?')
         print('1 - Jogar\n2 - Descansar')
         jogar_ou_nao = input('Informe o numero:').strip()
         print('')
@@ -80,7 +80,7 @@ def mes_2(jogar_ou_nao, atributos):
         print('Você não se sente corajoso para esse jogo e pensa em pedir para não jogar ')
         print('Oque você vai fazer?')
         while True:
-            print('1 - Jogar\n2 - Não jogar')
+            print('1 -Jogar\n2 - Não jogar')
             medroso = input('Vai jogar ou não? ').strip()
             if medroso == '1':
                 print('Você entra no jogo aos 80 minutos e faz o gol do titulo!!!')

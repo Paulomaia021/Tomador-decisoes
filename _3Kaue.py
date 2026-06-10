@@ -43,8 +43,25 @@ def mostrar_historico(historico):
 
 
 def pausar(historico):
-   if atributos["mes"] in [2, 4, 5, 7, 10]:
-    pausar(historico)
+    while True:
+        limpar_tela() 
+        print("\n===== PRÓXIMA AÇÃO =====")
+        print("1 - Voltar ao jogo")
+        print("2 - Ver histórico de decisões")
+
+        opcao = input("Escolha: ").strip()
+
+        if opcao == "1":
+            limpar_tela()
+            return
+        elif opcao == "2":
+            limpar_tela()  
+            mostrar_historico(historico)
+            input("\nAperte ENTER para voltar ao menu de pausa...")
+        else:
+            print("Opção inválida!")
+            input("Aperte ENTER para tentar novamente...")
+
 
 import os
 import time
